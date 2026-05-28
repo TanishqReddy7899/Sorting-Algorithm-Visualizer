@@ -178,6 +178,40 @@ void insertionSort(int arr[], int n)
     cout << "\n\nInsertion Sort Completed!\n";
 }
 
+// Partition Function for Quick Sort
+int partition(int arr[], int low, int high, int n)
+{
+    int pivot = arr[high];
+    int i = low - 1;
+
+    for(int j = low; j < high; j++)
+    {
+        if(arr[j] < pivot)
+        {
+            i++;
+            swap(arr[i], arr[j]);
+            display(arr, n);
+        }
+    }
+
+    swap(arr[i + 1], arr[high]);
+    display(arr, n);
+
+    return i + 1;
+}
+
+// Quick Sort
+void quickSort(int arr[], int low, int high, int n)
+{
+    if(low < high)
+    {
+        int pi = partition(arr, low, high, n);
+
+        quickSort(arr, low, pi - 1, n);
+        quickSort(arr, pi + 1, high, n);
+    }
+}
+
 // Main Function
 int main()
 {
@@ -199,6 +233,7 @@ int main()
     cout << "1. Bubble Sort\n";
     cout << "2. Selection Sort\n";
     cout << "3. Insertion Sort\n";
+    cout << "4. Quick Sort\n";
     cout << "Enter your choice: ";
     cin >> choice;
 
@@ -216,6 +251,11 @@ int main()
 
         case 3:
             insertionSort(arr, n);
+            break;
+
+        case 4:
+            quickSort(arr, 0, n - 1, n);
+            cout << "\n\nQuick Sort Completed!\n";
             break;
 
         default:
