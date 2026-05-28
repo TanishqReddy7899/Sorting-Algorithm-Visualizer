@@ -1,0 +1,71 @@
+ Sample Output
+
+
+Enter number of elements: 6
+
+Enter array elements:
+9 4 7 2 8 1
+
+===== SORTING MENU =====
+1. Bubble Sort
+2. Selection Sort
+3. Insertion Sort
+4. Quick Sort
+Enter your choice: 4
+
+
+        SORTING ALGORITHM VISUALIZER
+
+ 9 : █████████
+ 4 : ████
+ 7 : ███████
+ 2 : ██
+ 8 : ████████
+ 1 : █
+
+
+        SORTING ALGORITHM VISUALIZER
+
+ 1 : █
+ 4 : ████
+ 7 : ███████
+ 2 : ██
+ 8 : ████████
+ 9 : █████████
+
+
+        SORTING ALGORITHM VISUALIZER
+
+ 1 : █
+ 4 : ████
+ 7 : ███████
+ 2 : ██
+ 8 : ████████
+ 9 : █████████
+
+
+        SORTING ALGORITHM VISUALIZER
+
+ 1 : █
+ 2 : ██
+ 7 : ███████
+ 4 : ████
+ 8 : ████████
+ 9 : █████████
+
+
+        SORTING ALGORITHM VISUALIZER
+
+ 1 : █
+ 2 : ██
+ 4 : ████
+ 7 : ███████
+ 8 : ████████
+ 9 : █████████
+
+
+Quick Sort Completed!
+
+
+Final Sorted Array:
+1 2 4 7 8 9
